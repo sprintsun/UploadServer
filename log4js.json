@@ -1,0 +1,15 @@
+{
+  "appenders": [
+    {
+      "type": "console",
+      "category": "service"
+    },
+    {
+      "type": "file",
+      "filename": "logs/log_file.log",
+      "maxLogSize": 204800,
+      "backups": 3,
+      "category": "service"
+    }
+  ]
+}

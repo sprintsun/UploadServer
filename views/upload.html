@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Source Uploader</title>
+</head>
+<body>
+    <h1>Source Uploader</h1>
+    <form id="form" method="POST" enctype="multipart/form-data" action="/upload?path=qapp">
+        <p>Path: <input type="text" id="path" name="path" value=""/></p>
+        <p>File: <input type="file" name="file"><br /></p>
+        <p><input type="submit"></p>
+    </form>
+    <script type="text/javascript">
+        var form = document.getElementById('form');
+        form.onsubmit = function() {
+            form.setAttribute('action', '/upload?path=' + document.getElementById('path').value);
+        }
+    </script>
+</body>
+</html>

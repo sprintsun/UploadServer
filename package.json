@@ -1,0 +1,11 @@
+{
+  "name": "source_service",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "4.12.3",
+    "multer": "0.1.8",
+    "mkdirp": "0.5.0",
+    "log4js": "0.6.24",
+    "request": "2.55.0"
+  }
+}
